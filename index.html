@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+
+<div >
+</div>
+
+<div class="relative mt-20  grid col-span-1 row-span-1 w-auto h-auto place-items-center font-bold text-xl">
+  <div id="draggableYellow" #yellow class="border-slate-500 border col-start-1 col-end-1 grid-cols-1 row-start-1 row-end-1 w-[650px] h-[650px] grid grid-cols-3 grid-rows-3 bg-yellow-300 rounded-full z-10">
+    <div class="col-span-3  text-center"><p class="pt-3">deze week</p></div>
+    <div class="[writing-mode:vertical-lr] text-center">
+      <p class="pr-6 rotate-180">verre toekomst</p>
+    </div>
+    <div></div>
+    <div class="[writing-mode:vertical-lr] text-center ">
+      <div class="w-full rotate-180">
+        <p class="rotate-180 pr-6">korte termijn</p>
+      </div>
+    </div>
+    <div class="col-span-3  text-center">
+      <p class="h-full rotate-180 pt-6">middellange termijn</p>
+    </div>
+  </div>
+
+
+  <div id="draggableBlue" #blue class="border-slate-500 border col-start-1 col-end-1 row-start-1 row-end-1  w-[500px] h-[500px] grid grid-cols-3 grid-rows-3 bg-blue-400 rounded-full z-20">
+    <div class="col-span-3  text-center"><p class="pt-3">KENNIS</p></div>
+    <div class="[writing-mode:vertical-lr] text-center ">
+      <div class="w-full">
+        <p class="rotate-180 pr-6">ZELFKENNIS</p>
+      </div>
+    </div>
+    <div></div>
+    <div class="[writing-mode:vertical-lr] text-center ">
+      <div class="w-full rotate-180">
+        <p class="rotate-180 pr-6">VAARDIGHEDEN</p>
+      </div>
+    </div>
+    <div class="col-span-3  text-center">
+      <p class="h-full rotate-180"></p>
+    </div>
+  </div>
+
+  <div id="draggableOrange" #orange class="border-slate-500 border col-start-1 col-end-1 row-start-1 row-end-1  w-[350px] h-[350px] grid grid-cols-3 grid-rows-3 bg-orange-400 rounded-full z-30">
+    <div class="col-span-3  text-center"><p class="pt-3">AUTONOMIE</p></div>
+    <div class="[writing-mode:vertical-lr] text-center row-span-2 ">
+      <div class="w-full">
+        <p class="rotate-180 pr-10 pt-20">BETROKKENHEID</p>
+      </div>
+    </div>
+    <div></div>
+    <div class="[writing-mode:vertical-lr] text-center row-span-2 pb-44">
+      <div class="w-full rotate-180">
+        <p class="rotate-180 pr-8 ">COMPETENTIE</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="w-[150px] h-[150px] bg-green-500 rounded-full absolute z-40 border-slate-500 border ">
+    <div class="flex w-full h-full text-center items-center">
+      <p class="mx-auto text-2xl">leerling</p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  var dialarray = [0,14,55,87,133,150,222,299,301,330];
+
+
+  Draggable.create('#draggableYellow', {
+    type: "rotation"
+  })
+  Draggable.create('#draggableBlue', {
+    type: "rotation",
+  })
+  Draggable.create('#draggableOrange', {
+    type: "rotation",
+  })
+
+
+
+
+
+</script>
+</body>
+</html>
